@@ -1,0 +1,25 @@
+/* Basic modal footer styling */
+div.modal-footer {
+  display: block;
+}
+
+div.modal-footer button {
+  /* Default button styles */
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin: 0 4px;
+}
+
+div.modal-footer button.close-btn {
+  /* Specific styles for close button */
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+div.modal-footer button.change-btn {
+  /* Specific styles for change/save button */
+  background-color: #007bff;
+  color: white;
+}
