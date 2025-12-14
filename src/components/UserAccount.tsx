@@ -439,7 +439,15 @@ export function UserAccount() {
 
   const handleLogout = () => {
     setUser(null);
-    localStorage.removeItem('authToken');
+    // Clear stored auth data
+    try {
+      localStorage.removeItem('authToken');
+      localStorage.removeItem('user');
+    } catch (e) {
+      // ignore
+    }
+    // Inform API helper to clear any auth state
+    try { authAPI.logout(); } catch (e) { }
     setCurrentPage('home');
     toast.success('Logged out successfully');
   };
@@ -888,16 +896,16 @@ export function UserAccount() {
                     <table className="w-full">
                       <thead className="bg-gray-50">
                         <tr>
-                          <th className="px-4 py-3 text-left text-sm font-medium text-gray-900">Product</th>
-                          <th className="px-4 py-3 text-center text-sm font-medium text-gray-900">Quantity</th>
-                          <th className="px-4 py-3 text-right text-sm font-medium text-gray-900">Price</th>
-                          <th className="px-4 py-3 text-right text-sm font-medium text-gray-900">Total</th>
+                          <th className="py-3 text-left text-sm  text-gray-900">Product</th>
+                          <th className="py-3 text-center text-sm  text-gray-900">Quantity</th>
+                          <th className="py-3 text-center text-sm  text-gray-900">Price</th>
+                          <th className="py-3 text-center text-sm  text-gray-900">Total</th>
                         </tr>
                       </thead>
-                      <tbody className="divide-y divide-gray-200">
+                      <tbody>
                         {selectedOrder.items?.map((item: any, index: number) => (
                           <tr key={index}>
-                            <td className="px-4 py-4">
+                            <td className="px-1 py-4">
                               <div className="flex items-center">
                                 {item.image && (
                                   <img
