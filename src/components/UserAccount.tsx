@@ -934,10 +934,10 @@ export function UserAccount() {
                       </tbody>
                       <tfoot className="bg-gray-50">
                         <tr>
-                          <th colSpan={3} className="px-4 py-3 text-right text-sm font-medium text-gray-900">
+                          <th colSpan={3} className="px-4 py-3 text-left text-sm font-medium text-green-600">
                             Total:
                           </th>
-                          <th className="py-3 text-right text-sm font-medium text-green-600">
+                          <th className="px-4 py-3 text-right text-sm text-green-600">
                             AED {selectedOrder.total?.toFixed(2)}
                           </th>
                         </tr>
