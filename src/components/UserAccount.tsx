@@ -891,42 +891,42 @@ export function UserAccount() {
 
                 {/* Order Items */}
                 <div className="mb-6">
-                  <h4 className="text-md font-semibold text-gray-900 mb-4">Order Items</h4>
+                  <h6 className="text-md font-semibold text-gray-900 mb-4">Order Items</h6>
                   <div className="border border-gray-200 rounded-lg overflow-hidden table-view">
-                    <table className="w-full">
+                    <table className="order-info-t">
                       <thead className="bg-gray-50">
                         <tr>
-                          <th className="py-3 text-left text-sm  text-gray-900">Product</th>
-                          <th className="py-3 text-center text-sm  text-gray-900">Quantity</th>
-                          <th className="py-3 text-center text-sm  text-gray-900">Price</th>
-                          <th className="py-3 text-center text-sm  text-gray-900">Total</th>
+                          <th className="py-3 text-left text-gray-900">Product</th>
+                          <th className="py-3 text-center text-gray-900">Quantity</th>
+                          <th className="py-3 text-center text-gray-900">Price</th>
+                          <th className="py-3 text-center text-gray-900">Total</th>
                         </tr>
                       </thead>
                       <tbody>
                         {selectedOrder.items?.map((item: any, index: number) => (
                           <tr key={index}>
-                            <td className="px-1 py-4">
+                            <td className="py-4">
                               <div className="flex items-center">
                                 {item.image && (
                                   <img
                                     src={item.image}
                                     alt={item.name?.[language] || item.name?.en || 'Product'}
-                                    className="w-12 h-12 object-cover rounded border border-gray-200 mr-3"
+                                    className="w-12 h-12 object-cover rounded border border-gray-200 mr-1"
                                   />
                                 )}
                                 <div>
-                                  <p className="font-medium text-gray-900">
+                                  <p className="font-11">
                                     {item.name?.[language] || item.name?.en || 'Product'}
                                   </p>
                                   {item.category && (
-                                    <p className="text-sm text-gray-500">{item.category}</p>
+                                    <p className="font-11">{item.category}</p>
                                   )}
                                 </div>
                               </div>
                             </td>
-                            <td className="px-4 py-4 text-center">{item.quantity}</td>
-                            <td className="px-4 py-4 text-right">AED {item.price?.toFixed(2)}</td>
-                            <td className="px-4 py-4 text-right font-medium">
+                            <td className="py-4 text-center">{item.quantity}</td>
+                            <td className="py-4 text-right">AED {item.price?.toFixed(2)}</td>
+                            <td className="py-4 text-right">
                               AED {(item.price * item.quantity).toFixed(2)}
                             </td>
                           </tr>
@@ -937,7 +937,7 @@ export function UserAccount() {
                           <th colSpan={3} className="px-4 py-3 text-right text-sm font-medium text-gray-900">
                             Total:
                           </th>
-                          <th className="px-4 py-3 text-right text-sm font-medium text-green-600">
+                          <th className="py-3 text-right text-sm font-medium text-green-600">
                             AED {selectedOrder.total?.toFixed(2)}
                           </th>
                         </tr>
@@ -949,7 +949,7 @@ export function UserAccount() {
                 {/* Order Timeline */}
                 <div>
 
-                  <h4 className="text-md font-semibold text-gray-900 mb-4">Order Timeline</h4>
+                  <h6 className="text-md font-semibold text-gray-900 mb-4">Order Timeline</h6>
                   <div className="space-y-4">
                     <div className="flex items-start space-x-3">
                       <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
