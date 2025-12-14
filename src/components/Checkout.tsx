@@ -552,7 +552,7 @@ export function Checkout() {
 
                     <div className="flex justify-between">
                       <span className="text-green-800">{t.total}</span>
-                      <span className="text-xl text-green-700">AED {total.toFixed(2)}</span>
+                      <span className="text-green-700 ">AED {total.toFixed(2)}</span>
                     </div>
                   </div>
 
