@@ -49,7 +49,7 @@ const translations = {
     invalidResetToken: 'Invalid or expired reset token',
   },
   ar: {
-    welcome: 'مرحباً بك في منطقة العافية',
+    welcome: 'مرحباً بك في عافيه العافية',
     login: 'تسجيل الدخول',
     register: 'إنشاء حساب',
     email: 'البريد الإلكتروني',
@@ -325,13 +325,14 @@ export function LoginModal() {
             <TabsList className="log-res-tabs w-full">
               <TabsTrigger
                 value="login"
-                className="text-green-600 data-[state=active]:bg-green-600 data-[state=active]:text-white"
+                className="data-[state=active]:bg-green-600 data-[state=active]:text-white"
               >
                 {t.login}
               </TabsTrigger>
+
               <TabsTrigger
                 value="register"
-                className="text-green-600 data-[state=active]:bg-green-600 data-[state=active]:text-white"
+                className="data-[state=active]:bg-green-600 data-[state=active]:text-white"
               >
                 {t.register}
               </TabsTrigger>
