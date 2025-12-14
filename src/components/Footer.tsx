@@ -106,7 +106,7 @@ export function Footer() {
 
   const socialLinks = [
     { icon: Instagram, href: '#', color: 'hover:text-pink-500' },
-    { icon: Facebook, href: '#', color: 'hover:text-blue-600' },
+    { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61585363760414', color: 'hover:text-blue-600' },
     { icon: Twitter, href: '#', color: 'hover:text-blue-400' },
     { icon: Youtube, href: '#', color: 'hover:text-red-500' },
   ];
