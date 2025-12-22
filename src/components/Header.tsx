@@ -63,7 +63,7 @@ export function Header() {
             onClick={() => setCurrentPage('home')}
           >
             <img
-              src="https://scontent.fdxb1-1.fna.fbcdn.net/v/t39.30808-6/597829220_25326756927005449_7484898340885741205_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=oZ6cpRMatHsQ7kNvwHRe5MT&_nc_oc=AdlmubxOk6MW6dFs3oxRJeCQxZ9fDccSk1dqlSWpIs-AsWe3jc3S7y_NE8cHD_5CCO8&_nc_zt=23&_nc_ht=scontent.fdxb1-1.fna&_nc_gid=WpEPZjNWo6S-FkeFGrwQKA&oh=00_Afn449vdA4j-6zV57aM-iRZZ70OcjWfMS2q1PeivQLeK-w&oe=6944AADC"
+              src="https://www.facebook.com/photo/?fbid=122093105025178792&set=a.122093105007178792"
               alt="Afiya Zone Logo"
               className="w-10 h-10 rounded-full mr-3 object-contain logo "
             />
