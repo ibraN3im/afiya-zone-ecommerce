@@ -62,11 +62,11 @@ export function Header() {
             className="flex items-center cursor-pointer"
             onClick={() => setCurrentPage('home')}
           >
-            {/* <img
-              src="https://u.pcloud.link/publink/show?code=XZfRsx5ZM05ygYqXr4uRAcuyFsC13mKSuEuy"
+             <img
+              src="https://i.imgur.com/HDmpMTk.jpeg"
               alt="Afiya Zone Logo"
               className="w-10 h-10 rounded-full mr-3 object-contain logo"
-            /> */}
+            /> 
             <h1 className="text-xl text-green-600 tracking-wide afiya-title">Afiya Zone</h1>
           </div>
 
