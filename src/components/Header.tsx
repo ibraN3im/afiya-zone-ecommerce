@@ -63,7 +63,7 @@ export function Header() {
             onClick={() => setCurrentPage('home')}
           >
             <img
-              src="https://www.facebook.com/photo/?fbid=122093105025178792&set=a.122093105007178792"
+              src="https://u.pcloud.link/publink/show?code=XZfRsx5ZM05ygYqXr4uRAcuyFsC13mKSuEuy"
               alt="Afiya Zone Logo"
               className="w-10 h-10 rounded-full mr-3 object-contain logo "
             />
